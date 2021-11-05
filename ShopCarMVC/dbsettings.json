@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=PC\\SQLEXPRESS; Database=ShopCar; User ID ='sa'; Password='sa'; Persist Security Info=false; MultipleActiveResultSets=True; Trusted_Connection=False;"
+  }
+}
