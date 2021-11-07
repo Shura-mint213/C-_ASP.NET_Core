@@ -5,11 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using ShopCarMVC.Data;
-//using ShopCarMVC.Data;
 using ShopCarMVC.Data.Interfaces;
 using ShopCarMVC.Data.Mocks;
 using Microsoft.AspNetCore.Mvc;
-//using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using ShopCarMVC.Data.Models;
 using ShopCarMVC.Data.Repository;
@@ -52,8 +50,12 @@ namespace ShopCarMVC
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
-            app.UseMvcWithDefaultRoute();
-
+            //app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(name: "categoryFilter", template: "Car/{action}/{category?}", defaults: new {Controller = "Car", action = "List"});
+            });
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
