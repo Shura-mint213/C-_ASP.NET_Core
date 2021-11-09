@@ -79,3 +79,5 @@ C:\Users\иван\Desktop\языки\C\C#_ASP.NET_Core\ShopCarMVC\obj\Debug\net5
 C:\Users\иван\Desktop\языки\C\C#_ASP.NET_Core\ShopCarMVC\obj\Debug\net5.0\Razor\Views\Shared\AllCars.cshtml.g.cs
 C:\Users\иван\Desktop\языки\C\C#_ASP.NET_Core\ShopCarMVC\obj\Debug\net5.0\Razor\Views\ShopCart\Index.cshtml.g.cs
 C:\Users\иван\Desktop\языки\C\C#_ASP.NET_Core\ShopCarMVC\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\иван\Desktop\языки\C\C#_ASP.NET_Core\ShopCarMVC\obj\Debug\net5.0\Razor\Views\Order\Checkout.cshtml.g.cs
+C:\Users\иван\Desktop\языки\C\C#_ASP.NET_Core\ShopCarMVC\obj\Debug\net5.0\Razor\Views\Order\Complete.cshtml.g.cs
